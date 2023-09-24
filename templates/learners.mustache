@@ -1,0 +1,51 @@
+{{!
+Mustache for program info
+@author: Deependra Singh.
+}}
+{{#filter}}
+<div class="col-sm-6 col-md-6 col-5 px-0">
+     <div class="custom-select-box" id= "course-list-quiz">
+         <select>
+         {{#filtervalue}}
+             <option value={{value}} {{select}}>{{text}}</option>
+         {{/filtervalue}}
+         </select>
+     </div>
+ </div>
+{{/filter}}
+<div class="trainers-list">
+    <ul class="faluty-list-trainerblock  userrank-listing-ul m-0 p-0">
+        {{#headerdisplay}}
+              <li class="learners-head" id="yui_3_17_2_1_1665142439012_769">
+                  <div class="col-sm-7 col-7">
+                   <div class="profile-details-img ">Name <alt=""></alt=""></div></div>
+                   <div class="col-sm-5 col-5">
+                   <div class="time-spent ml-2"> Quizzes<alt=""></alt=""></div></div>
+               </li>
+        {{/headerdisplay}}
+        {{#trainers}}
+        <li class="d-flex justify-content-between align-items-center">
+            <div class="col-sm-7 col-7 px-0 d-flex justify-content-start align-items-center user-img">
+                <div class="d-inline-block trainers-table-img ">
+                    <img src="{{imageurl}}" alt="">
+                </div>
+                <div class="d-inline-block ml-2">
+                    <span class="d-block black-light-color font-14 font-weight-bold"> {{name}}</span>
+                </div>
+            </div>
+            <div class="col-sm-5 col-5 px-0 d-flex justify-content-end">
+                <div class="rating-box d-flex flex-row justify-content-center align-items-center font-weight-bold black-light-color">
+                    <span class="font-14 d-inline-block">{{{quizcount}}}</span>
+                </div>
+            </div>
+        </li>
+        {{/trainers}}
+
+    </ul>
+   
+</div>
+{{#js}}
+    require(['block_question_status/question_status'], function(questionststatus) {
+    questionststatus.questions();
+    });
+{{/js}}

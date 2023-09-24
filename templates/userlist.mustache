@@ -1,0 +1,27 @@
+
+<div class="container">   
+  <table class="table">
+    <thead>
+      <tr>
+        <th>User Fullname</th>
+        <th>Email</th>
+        <th>Quiz attempts</th>
+      </tr>
+    </thead>
+    <tbody>
+{{#userlists}}
+      <tr>
+        <td>{{{name}}}</td>
+        <td>{{{email}}}</td>
+        <td>{{{quizcount}}}</td>
+      </tr>
+{{/userlists}}
+    </tbody>
+  </table>
+</div>
+{{#js}}
+    require(['block_question_status/userlist'], function(learnerslist) {
+    learnerslist.users();
+    });
+{{/js}}
+

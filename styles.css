@@ -1,0 +1,109 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 09-Mar-2022, 12:09:09 pm
+    Author     : Kratika Gupta
+*/
+.block_quizrank > .card-block {
+    max-height: unset !important;
+    border: 1px solid #E7E7E7;
+}
+.userrank-listing-ul .learners-head {
+  border-bottom: 1px solid #e1e6ee;
+  background-color: #FAFBFC;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 14px 6px;
+  color: #333;
+}
+.userrank-listing-ul .profile-details-img{
+  width: 40%;
+  display: inline-block;
+}
+.userrank-listing-ul .time-spent {
+  width: 100%;
+}
+.userrank-listing-ul .learners-head {
+  font-size: 12px!important;
+}
+/* .rating-box {
+    width: 94px;
+    background-color: #F3F3F3;
+    padding: 5px 6px;
+    border-radius: 4px;
+    max-width: 94px;
+}
+.fa-star {
+    color: #FBAF33;
+    font-size: 20px !important;
+} */
+.faluty-list-trainerblock{
+    width: 100%;
+    max-height: 315px;
+    z-index: 9;
+    position: relative;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.faluty-list-trainerblock .faluty-list-li{
+    border-bottom: 1px solid #e7e7e7;
+    padding: 8px 6px;
+}
+.dark-theme .faluty-list-trainerblock .faluty-list-li{
+    border-bottom: 1px solid #292929;
+}
+.faluty-list-trainerblock li:hover{
+    background-color: #FAFBFC;
+}
+.dark-theme .faluty-list-trainerblock li:hover{
+    background-color: #212121;
+}
+.faluty-list-trainerblock li:first-child{
+    border-top: 0 ;
+}
+.faluty-list-trainerblock .trainers-img ,.faluty-list-trainerblock .trainers-img img{
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+}
+@media screen and (max-width: 767px) {
+    .trainer-faculty-section {
+    }
+    .block_quiz_participation .card-block{
+        padding-left: 10px!important;
+        padding-right: 10px!important;
+    }
+}
+
+@media screen and (max-width: 550px) {
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 900px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 900px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
