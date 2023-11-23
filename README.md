@@ -1,4 +1,5 @@
 # Quiz Question status #
+
 This plugin display the wrong attempted question of the user in the last week.
 TODO Describe the plugin shortly here.
 
@@ -29,7 +30,7 @@ to complete the installation from the command line.
 
 ## License ##
 
-2022 Your Name <you@example.com>
+2022 Deependra Kumar Singh <deepcs20@gmail.com>
 
 This program is free software: you can redistribute it and/or modify it under
 the terms of the GNU General Public License as published by the Free Software
